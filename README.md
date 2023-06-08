@@ -1,45 +1,8 @@
 # CattNIS
-Novel Identification System of Cattle with Retinal Images
-CattNISCattleIdentificationApp Executable
+To run the CattNIS_GUI
 
-1. Prerequisites for Deployment 
-
-Verify that version 9.10 (R2021a) of the MATLAB Runtime is installed.   
-If not, you can run the MATLAB Runtime installer.
-To find its location, enter
-  
-    >>mcrinstaller
-      
-at the MATLAB prompt.
-NOTE: You will need administrator rights to run the MATLAB Runtime installer. 
-
-Alternatively, download and install the Windows version of the MATLAB Runtime for R2021a 
-from the following link on the MathWorks website:
-
-    https://www.mathworks.com/products/compiler/mcr/index.html
-   
-For more information about the MATLAB Runtime and the MATLAB Runtime installer, see 
-"Distribute Applications" in the MATLAB Compiler documentation  
-in the MathWorks Documentation Center.
-
-2. Files to Deploy and Package
-
-Files to Package for Standalone 
-================================
--CattNISCattleIdentificationApp.exe
--MCRInstaller.exe 
-    Note: if end users are unable to download the MATLAB Runtime using the
-    instructions in the previous section, include it when building your 
-    component by clicking the "Runtime included in package" link in the
-    Deployment Tool.
--This readme file 
-
-
-
-3. Definitions
-
-For information on deployment terminology, go to
-https://www.mathworks.com/help and select MATLAB Compiler >
-Getting Started > About Application Deployment >
-Deployment Product Terms in the MathWorks Documentation
-Center.
+MATLAB version 2021a and above must be installed on your computer.
+Our trained model "templateTEST.mat" file (https://disk.yandex.com.tr/d/Mo7FKVp60BovXw for download), Colorize_Image.m file for image colorizing and Threshold_Level.m for thresholding with OTSU method. Our GUI file "retinaclassification_app.mlapp" files must be in the same directory.
+After all these processes, App Designer should be opened in MATLAB application and GUI file should be selected by saying open.
+After opening the GUI in App Designer, it is enough to press the Run button. The GUI will then open and you will be prompted to select an image.
+To test the program, sample test images are located under the test Images folder.
